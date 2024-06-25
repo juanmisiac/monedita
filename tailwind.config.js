@@ -6,7 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      default: ['Noto Sans'],
+    }
   },
+  darkMode: "class",
   plugins: [],
 }
 
