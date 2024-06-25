@@ -5,17 +5,16 @@ import ControlledSwitches from "./ControlledSwitches";
 // Boton de switch de MUI
 
 export const Header = () => {
+  
   const [theme, setTheme] = useState(() => {
     if(window.matchMedia("(prefers-color-scheme: dark)").matches){
       return "dark"
     }
     return "light"
   })
-
   const handleChangeTheme = (): void => {
     setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
-  };
-
+  }
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add('dark');
