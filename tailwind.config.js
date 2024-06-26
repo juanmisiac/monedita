@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '18': '69px',
+      }
+    },
     fontFamily: {
       default: ['Noto Sans'],
     }
