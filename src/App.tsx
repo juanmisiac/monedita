@@ -1,14 +1,26 @@
-import { Header } from './components/Header'
 import './App.css'
-/*import { SideNavBar } from './components/SideNavBar'*/
-import { HomePage } from './pages/HomePage'
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { HomePage } from './routes/HomePage'
+import { ErrorPage } from './routes/ErrorPage'
+import { DolaresPage } from './routes/DolaresPage'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/dolares",
+    element: <DolaresPage />
+  }
+])
 
 function App() {
   return (
     <>
-      <Header></Header>
-
-      <HomePage></HomePage>
+      <RouterProvider router={router} />
     </>
   )
 }

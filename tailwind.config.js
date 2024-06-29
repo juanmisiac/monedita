@@ -12,6 +12,10 @@ export default {
     },
     fontFamily: {
       default: ['Noto Sans'],
+    },
+    backgroundImage: {
+      /*crear un light*/
+      'd': "url('src/assets/img/bg-d.png')",
     }
   },
   darkMode: "class",
