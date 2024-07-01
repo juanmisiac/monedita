@@ -22,14 +22,46 @@ export const SideNavBar = (/*props: Props*/) => {
         </div>
         <div className={`${expanded ? "" : "hidden"} sm:flex px-4`}>
           <ul className='text-white dark:text-white font-medium text-xl'>
-            <li className='mt-4'>
+            <li className='mt-3'>
               <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
-                <Link to={"/dolares"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Dolares` : `USD`}</Link>
+                <Link to={"/dolar"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Dólar` : `USD`}</Link>
               </button>
             </li>
             <li className='mt-3'>
               <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
-                <Link to={"/euros"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Euros` : `EUR`}</Link>
+                <Link to={"/euro"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Euro` : `EUR`}</Link>
+              </button>
+            </li>
+            <li className='mt-3'>
+              <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
+                <Link to={"/real"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Real` : `BRL`}</Link>
+              </button>
+            </li>
+            <li className='mt-3'>
+              <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
+                <Link to={"/peso-chileno"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Peso Chileno` : `CLP`}</Link>
+              </button>
+            </li>
+            <li className='mt-3'>
+              <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
+                <Link to={"/peso-uruguayo"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Peso Uruguayo` : `UYU`}</Link>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div className={`${expanded ? "p-4 pb-2" : ""} flex justify-between items-center text-blue-400 dark:text-white font-medium`}>
+          <h2 className='text-2xl'>{expanded ? `Criptos` : ``}</h2>
+        </div>
+        <div className={`${expanded ? "" : "hidden"} sm:flex px-4`}>
+          <ul className='text-white dark:text-white font-medium text-xl'>
+            <li className='mt-3'>
+              <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
+                <Link to={"/bitcoin"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Bitcoin` : `BTC`}</Link>
+              </button>
+            </li>
+            <li className='mt-3'>
+              <button className={`bg-blue-400 dark:bg-blue-900 px-2 py-1 rounded-lg duration-150 hover:scale-105 shadow-xl ${expanded ? "" : "w-9"}`}>
+                <Link to={"/ethereum"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Ethereum` : `ETH`}</Link>
               </button>
             </li>
           </ul>
