@@ -8,6 +8,8 @@ import { EurosPage } from './routes/EurosPage'
 import { RealesPage } from './routes/RealesPage'
 import { ChilenosPage } from './routes/ChilenosPage'
 import { UruguayosPage } from './routes/UruguayosPage'
+import { BitcoinPage } from './routes/BitcoinPage'
+import { EthereumPage } from './routes/EthereumPAge'
 
 const router = createBrowserRouter([
   {
@@ -37,9 +39,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/bitcoin",
+    element: <BitcoinPage />
   },
   {
     path: "/ethereum",
+    element: <EthereumPage />
   }
 ])
 
