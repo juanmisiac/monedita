@@ -1,17 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import ControlledSwitches from "./ControlledSwitches";
+import { ThemeContext } from "../context/ThemeContext";
 
-// Logica del dark/light mode copiada de tutorial de Fazt Code, buscar: React y TailwindCSS - Dark Theme, cambio de tema
 // Boton de switch de MUI
 
 export const Header = () => {
-  
-  const [theme, setTheme] = useState(() => {
-    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-      return "dark"
-    }
-    return "light"
-  }) //EN EL FUTURO MEJORAR EL ESTADO DE theme, NECESITO QUE SEA ESTADO GLOBAL
+
+  const { theme, setTheme } = useContext(ThemeContext)!
   const handleChangeTheme = (): void => {
     setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
   }

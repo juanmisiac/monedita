@@ -3,11 +3,7 @@ import { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-//type Props = {}
-
-//Hay que hacer un estilo especifico para el boton del sidebar que es el link actual
-
-export const SideNavBar = (/*props: Props*/) => {
+export const SideNavBar = () => {
   const [expanded, setExpanded] = useState(false) //EN EL FUTURO MEJORAR EL ESTADO DE expanded, NECESITO QUE SEA ESTADO GLOBAL
   return (
     <aside className={`h-screen ${expanded ? "w-72" : "w-18"} duration-150 sm:shadow-lg z-30`}>

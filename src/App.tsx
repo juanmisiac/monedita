@@ -11,6 +11,9 @@ import { UruguayosPage } from './routes/UruguayosPage'
 import { BitcoinPage } from './routes/BitcoinPage'
 import { EthereumPage } from './routes/EthereumPAge'
 
+import { ThemeContext } from './context/ThemeContext'
+import { useState } from 'react'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,10 +51,18 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  
+  const [theme, setTheme] = useState(() => {
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+      return "dark"
+    }
+    return "light"
+  })
+  
   return (
-    <>
+    <ThemeContext.Provider value={{theme, setTheme}}>
       <RouterProvider router={router} />
-    </>
+    </ThemeContext.Provider>
   )
 }
 
