@@ -1,7 +1,6 @@
-import { ArrowLeftFromLine, ArrowRightFromLine } from 'lucide-react';
 import { useState } from 'react';
-
 import { NavLink } from 'react-router-dom';
+import { ArrowLeftFromLine, ArrowRightFromLine, Minus } from 'lucide-react';
 
 export const SideNavBar = () => {
   const [expanded, setExpanded] = useState(false) //EN EL FUTURO MEJORAR EL ESTADO DE expanded, NECESITO QUE SEA ESTADO GLOBAL
@@ -45,8 +44,8 @@ export const SideNavBar = () => {
             </li>
           </ul>
         </div>
-        <div className={`${expanded ? "p-4 pb-2" : ""} flex justify-between items-center text-blue-400 dark:text-white font-medium`}>
-          <h2 className='text-2xl'>{expanded ? `Criptos` : ``}</h2>
+        <div className={`${expanded ? "p-4 pb-2" : "mt-3 ms-5.5"} flex justify-between items-center text-blue-400 dark:text-white font-medium`}>
+          <h2 className={`${expanded ? "text-2xl" : "hidden sm:flex" }`}>{expanded ? `Criptos` : <Minus />}</h2>
         </div>
         <div className={`${expanded ? "" : "hidden"} sm:flex px-4`}>
           <ul className='text-white dark:text-white font-normal text-xl'>

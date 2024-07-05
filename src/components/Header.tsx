@@ -25,7 +25,7 @@ export const Header = () => {
         <ul className="flex items-center">
           <li className="mt-0.5 me-2">
             <button
-              className="rounded-full text-white p-1 hover:bg-blue-300 hover:dark:bg-blue-900 duration-100"
+              className="rounded-full text-white p-0.5 hover:bg-blue-500 hover:dark:bg-yellow-500 hover:scale-105 duration-100"
               onClick={handleChangeTheme}
               aria-label="Cambiar tema">
               {theme == "dark" ? <Sun /> : <Moon />}
