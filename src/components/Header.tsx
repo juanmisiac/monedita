@@ -1,8 +1,6 @@
 import { useContext, useEffect } from "react";
-import ControlledSwitches from "./ControlledSwitches";
 import { ThemeContext } from "../context/ThemeContext";
-
-// Boton de switch de MUI
+import { Sun, Moon } from "lucide-react";
 
 export const Header = () => {
 
@@ -25,12 +23,12 @@ export const Header = () => {
       </h1>
       <nav>
         <ul className="flex items-center">
-          <li>
+          <li className="mt-0.5 me-2">
             <button
-              className="rounded-full duration-100"
+              className="rounded-full text-white p-1 hover:bg-blue-300 hover:dark:bg-blue-900 duration-100"
               onClick={handleChangeTheme}
               aria-label="Cambiar tema">
-              <ControlledSwitches></ControlledSwitches>
+              {theme == "dark" ? <Sun /> : <Moon />}
             </button>
           </li>
           <li>
