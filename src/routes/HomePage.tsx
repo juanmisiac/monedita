@@ -7,7 +7,7 @@ export const HomePage = () => {
       <Header />
       <div className="flex bg-white dark:bg-[#1f305c]">
         <SideNavBar></SideNavBar>
-        <div className="absolute flex mt-16 sm:mt-8 ms-16 sm:ms-28 text-blue-400 dark:text-white">
+        <div className="absolute flex mt-16 sm:mt-8 ms-16 sm:ms-28 text-blue-500 dark:text-white">
           <h2 className="text-3xl font-bold">Monedita</h2>
         </div>
       </div>
