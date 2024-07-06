@@ -11,15 +11,14 @@ export default {
         '5.5': '22px',
         '7.5': '30px',
         '18': '69px',
+      },
+      backgroundImage: {
+        'd': "url('src/assets/img/dark-grid.png')",
       }
     },
     fontFamily: {
       default: ['Noto Sans'],
     },
-    backgroundImage: {
-      /*crear un light*/
-      'd': "url('src/assets/img/bg-d.png')",
-    }
   },
   darkMode: "class",
   plugins: [
