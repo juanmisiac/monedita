@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <div className="flex bg-blue-100 dark:bg-[#1f305c]">
+      <div className="flex bg-white dark:bg-[#1f305c]">
         <SideNavBar></SideNavBar>
         <div className="absolute flex mt-16 sm:mt-8 ms-16 sm:ms-28 text-blue-400 dark:text-white">
           <h2 className="text-3xl font-bold">Monedita</h2>

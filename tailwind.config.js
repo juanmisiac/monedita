@@ -9,6 +9,7 @@ export default {
       spacing: {
         '0.5': '2.5px',
         '5.5': '22px',
+        '7.5': '30px',
         '18': '69px',
       }
     },
