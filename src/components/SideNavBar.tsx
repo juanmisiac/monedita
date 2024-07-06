@@ -18,27 +18,27 @@ export const SideNavBar = () => {
         <div className={`${expanded ? "" : "hidden"} sm:flex px-4`}>
           <ul className='text-blue-500 dark:text-white font-normal text-xl'>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/dolar"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Dólar` : `USD`}</NavLink>
               </button>
             </li>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/euro"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Euro` : `EUR`}</NavLink>
               </button>
             </li>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/real"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Real` : `BRL`}</NavLink>
               </button>
             </li>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/peso-chileno"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Peso Chileno` : `CLP`}</NavLink>
               </button>
             </li>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/peso-uruguayo"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Peso Uruguayo` : `UYU`}</NavLink>
               </button>
             </li>
@@ -50,12 +50,12 @@ export const SideNavBar = () => {
         <div className={`${expanded ? "" : "hidden"} sm:flex px-4`}>
           <ul className='text-blue-500 dark:text-white font-normal text-xl'>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/bitcoin"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Bitcoin` : `BTC`}</NavLink>
               </button>
             </li>
             <li className='mt-3'>
-              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-600 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
+              <button className={`bg-white dark:bg-black border border-neutral-300 dark:border-neutral-700 dark:hover:border-neutral-500 px-2 py-1 rounded-lg duration-150 hover:border-neutral-400 shadow-xl ${expanded ? "" : "w-9"}`}>
                 <NavLink to={"/ethereum"} className={`${expanded ? "" : "text-xs flex justify-center py-1.5"}`}>{expanded ? `Ethereum` : `ETH`}</NavLink>
               </button>
             </li>
