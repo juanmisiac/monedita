@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { Sun, Moon } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
 
@@ -19,7 +20,7 @@ export const Header = () => {
   return (
     <div className="bg-white dark:bg-slate-900 border-b border-neutral-200 p-3 md:p-4 flex justify-between items-center">
       <h1 className="text-2xl md:text-3xl text-blue-500 font-black font-default hover:cursor-default">
-        <a href="/">🪙Monedita</a>
+        <NavLink to={"/"}>🪙Monedita</NavLink>
       </h1>
       <nav>
         <ul className="flex items-center">
