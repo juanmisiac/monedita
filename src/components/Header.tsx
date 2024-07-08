@@ -19,7 +19,7 @@ export const Header = () => {
 
   return (
     <div className="bg-white dark:bg-black border-b border-neutral-300 dark:border-neutral-800 p-3 md:p-4 flex justify-between items-center">
-      <h1 className="text-2xl md:text-3xl font-black font-default hover:cursor-default">
+      <h1 className="text-3xl font-black font-default hover:cursor-default">
         <NavLink to={"/"}>🪙<span className="text-blue-500 dark:bg-gradient-to-b dark:from-blue-500 dark:to-blue-300 dark:text-transparent dark:bg-clip-text">Monedita</span></NavLink>
       </h1>
       <nav>
