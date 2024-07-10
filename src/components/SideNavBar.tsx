@@ -6,7 +6,7 @@ export const SideNavBar = () => {
   const [expanded, setExpanded] = useState(false) //EN EL FUTURO MEJORAR EL ESTADO DE expanded, NECESITO QUE SEA ESTADO GLOBAL
   return (
     <aside className={`h-screen ${expanded ? "w-72" : "w-18"} duration-150 sm:shadow-md z-30`}>
-      <nav className={`h-full flex flex-col sm:bg-white/80 sm:border-r sm:border-neutral-300 sm:dark:border-neutral-800 ${expanded ? "bg-white/80 dark:bg-black/80 sm:dark:bg-black/80 backdrop-blur-md border-r border-neutral-300 dark:border-neutral-800" : "sm:dark:bg-black"}`}>
+      <nav className={`h-full flex flex-col sm:bg-slate-100/80 sm:border-r sm:border-neutral-300 sm:dark:border-neutral-800 ${expanded ? "bg-slate-100/80 dark:bg-black/80 sm:dark:bg-black/80 backdrop-blur-sm border-r border-neutral-300 dark:border-neutral-800" : "sm:dark:bg-black"}`}>
         <div className='p-4 pb-2 flex justify-between items-center text-blue-500 dark:text-white font-medium'>
           <h2 className='text-2xl'>{expanded ? `Monedas` : ``}</h2>
           <button

@@ -5,7 +5,7 @@ export const BitcoinPage = () => {
   return (
     <>
       <Header />
-      <div className="flex bg-white dark:bg-d dark:bg-cover">
+      <div className="flex bg-slate-100 dark:bg-d dark:bg-cover">
         <SideNavBar></SideNavBar>
         <div className="absolute flex mt-16 sm:mt-8 ms-16 sm:ms-28 text-blue-500 dark:text-white">
           <h2 className="text-3xl font-bold">Bitcoin</h2>

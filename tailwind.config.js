@@ -12,6 +12,13 @@ export default {
         '7.5': '30px',
         '18': '69px',
       },
+      fontSize: {
+        '1.5xl': '1.45rem',
+        '4.5xl': '2.6rem'
+      },
+      lineHeight: {
+        '11': '2.75rem'
+      },
       backgroundImage: {
         'd': "url('src/assets/img/dark-grid.png')",
       }
